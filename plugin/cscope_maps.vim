@@ -126,16 +126,16 @@ if has("cscope")
     " (Note: you may wish to put a 'set splitright' in your .vimrc
     " if you prefer the new window on the right instead of the left
 
-    nmap <C-@>s :vert scs find s <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-@>g :vert scs find g <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-@>c :vert scs find c <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-@>t :vert scs find t <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-@>e :vert scs find e <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-@>f :vert scs find f <C-R>=expand("<cfile>")<CR><CR>
-    nmap <C-@>i :vert scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
-    nmap <C-@>d :vert scs find d <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-@>a :vert scs find a <C-R>=expand("<cword>")<CR><CR>
-    nmap <C-@>S :vert scs find t struct <C-R>=expand("<cword>")<CR> {<CR>
+    nmap <C-@>s :tab cs find s <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-@>g :tab cs find g <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-@>c :tab cs find c <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-@>t :tab cs find t <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-@>e :tab cs find e <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-@>f :tab cs find f <C-R>=expand("<cfile>")<CR><CR>
+    nmap <C-@>i :tab cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+    nmap <C-@>d :tab cs find d <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-@>a :tab cs find a <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-@>S :tab cs find t struct <C-R>=expand("<cword>")<CR> {<CR>
 
 
     " Hitting CTRL-space *twice* before the search type does a horizontal
